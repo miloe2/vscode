@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 100%;
+            height: 50vw;
+            background-color:aqua
+        }
+        .navContainer {
+            width: 100%;
+            height: 10%;
+            background-color:bisque;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 20%;
+            height: 50px;
+            margin: 2px;
+            text-align: center;
+            color: white;
+            background-color: orange;
+        }
+        .title {
+            width: 60%;
+            height: 50px;
+            margin: 2px;
+            text-align: center;
+            color: white;
+            background-color: orange;
+        }
+        .hbgMenu {
+            width: 20%;
+            height: 50px;
+            margin: 2px;
+            text-align: center;
+            color: white;
+            background-color: orange;
+        }
+
+        main {
+            width: 100%;
+            background-color:aqua;
+            border: 1px solid black;
+            display: flex;
+        }
+        main .section {
+            width: 30%;
+            flex-direction: column;
+
+
+        }
+        main .section article{
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            color: white;
+            background-color: blue;
+            border: 1px solid black;
+            margin: 2px;
+
+
+        }
+        main .aside{
+            width: 70%;
+            height: 1000px;
+
+        }
+        main .aside .asideArticle{
+            text-align: center;
+            height: 100%;
+            color: white;
+            background-color: blue;
+            border: 1px solid black;
+            margin: 2px;
+
+        }
+
+        footer{
+            width: 100%;
+            height: 10%;
+            background-color: aqua;
+            border: 1px solid black;
+            display: flex;
+        }
+        footer .policy{
+            background-color: black;
+            border: 1px solid white;
+            width: 20%;
+            height: 100%;
+        }
+        footer .company{
+            background-color: black;
+            border: 1px solid white;
+            width: 60%;
+            height: 100%;
+        }
+
+        footer .etc{
+            background-color: black;
+            border: 1px solid white;
+            width: 20%;
+            height: 100%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav class="navContainer">
+                <div class="logo">logo</div>
+                <div class="title">title을 넣어주세요</div>
+                <div class="hbgMenu">hamburger Menu</div>
+            </nav>
+        </header>
+        <main>
+            <section class="section">
+                <article> section 1</article>
+                <article> section 2</article>
+                <article> section 3</article>
+            </section>
+
+            <aside class="aside">
+                <div class="asideArticle">aside</div>
+            </aside>
+        </main>
+        <footer>
+            <div class="policy">약관 및 정책</div>
+            <div class="company">회사소개</div>
+            <div class="etc">기타</div>
+
+        </footer>
+
+
+
+
+    </div>
+</body>
+</html>

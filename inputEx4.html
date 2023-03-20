@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        div{
+            width: 60px;
+            float: left;
+        }
+
+    </style>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  -->
+    <form action="#">
+        <input style="border:none "type="submit" value="등록">
+    <button style="width: 100px; background-color: beige; border-color: #ccc;"  type="submit">
+        <img src="./images/google_logo.png" alt="google" width="100px">
+        등록하기
+    </button>
+    </form>
+    <input type="text" disabled>
+    <button type="button" disabled>비활성</button>
+
+    <br><br>
+    <button disabled>확인</button>
+    <button style="background-color: darksalmon; font-size: small; border : 0 white">취소</button>
+
+    <form action="#">
+        <fieldset style="width:300px">
+            <legend>좋아하는 과일</legend>
+            <input type="checkbox" id="banana" value="banana">
+            <label for="banana">banana</label><br>
+            <input type="checkbox" id="apple" value="apple" checked>
+            <label for="apple">apple</label><br>
+            <input type="checkbox" id="banana" value="orange">
+            <label for="orange">orange</label><br>
+        </fieldset>
+    </form>
+    <input type="tel" placeholder="전화번호를 입력해 주세요.">
+    
+    <form action="#">
+        <div style="float : left">
+            <label for="name">name</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="tel">phoneNumber</label>
+            <input type="tel" id="tel" required>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+
+
+
+
+    
+</body>
+</html>

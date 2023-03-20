@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        body{
+            font-family: 'Pretendard';
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+
+        }
+        #wrap{
+            position: relative;
+
+
+        }
+        nav{
+            opacity: 1;
+            /* background-color: black; */
+            background-image: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,.8));
+            width: 100%;
+            height: 50px;
+            padding: 3px 0px 0px 20px;
+            display: flex;
+            align-items: center;
+            position:fixed;
+        }
+        #navRight{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 50px;
+        }
+        .menuBtn{
+            color: white;
+            padding: 0px 20px;
+            min-width: 100px;
+            font-size: 12px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #homeBtn{
+            width: 20px;
+            height: auto;
+            font-weight: bold; 
+            color: white;
+            font-size: 2rem;
+        }
+        #mainExhibition{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        #descBox{
+            background-color: black;
+            width: 20vw;
+            height: 100vh; 
+            padding: 0 35px;
+            display: flex;
+            min-width: 300px;
+        }
+        .descText{
+            width: 100%;
+            line-height: 40px;
+            position: relative;
+            top: 30%;
+        }
+        .place {
+            font-size: 2rem;
+            color: white;
+        }
+        .aka{
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+        }
+        .name{
+            font-size: 1rem;
+            color: white;
+        }
+        .desc{
+            display: block;
+            width: 500px;
+            height: 100px;
+            color: rgba(255, 255, 255, 0.829);
+            line-height: 1.1rem;
+            font-size: 10px;
+            font-weight: 100; 
+            letter-spacing :0.7px;
+            max-width: 300px;
+        }
+        .detail{
+            color: white;
+
+        }
+        .bar{
+            width: 600px;
+            height: 100px;
+            position: absolute;
+            top: 580px;
+            left : 100px;
+            display: flex;
+        }
+        .barBtn{
+            width: 100px;
+            height: 1.5rem;
+            margin: 20px;
+            border-bottom: 1px solid white;
+            opacity: .7;
+            text-align: end;
+            color: white;
+            font-size: 12px;
+            font-weight: 100;
+            letter-spacing :0.8px;
+        }
+        .mainImg{
+            width: 100%;
+            height: 100vh; 
+            background-color: #333;
+            /* object-fit: cover; */
+            background-size: cover;
+            overflow: hidden;
+            clear: left;
+            justify-content: right;
+            background-image: url(https://static1.pocketlintimages.com/wordpress/wp-content/uploads/139375-gadgets-feature-ces-2020-image1-smye5xabro.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5);
+        }
+        .contents{
+            width: 80vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            /* align-items: center; */
+            padding: 10%;
+            overflow: hidden;
+        }
+
+        .contents .contentImg{
+            width: 600px;
+            height: 400px;
+            margin-top: 50px;
+            background-size: cover;
+            /* background-image: url(http://veig.tv/wp-content/uploads/2013/08/08.png); */
+        } 
+        .mrg-btm{
+            margin-bottom: 10px;
+            /* color: red; */
+        }
+        .textBold{
+            font-weight: 600;
+        }
+        .contentText{
+            align-items: center;
+            width: 500px;
+            height: 300px;
+            background-color: black;
+            margin-left: 150px;
+            padding: 10% 0;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: #111;
+            padding: 60px 0 0 0;
+
+        }
+        .footerText{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            width: 100px;
+            height: auto;
+        }
+        #img{
+            /* width: 100%;
+            height: auto; */
+            width: 600px;
+            height: 400px;
+        }
+        .buttonBox{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-top: 10px;
+
+        }
+        .button-img {
+            background: url( "/images/blog/detail-arrow-right.svg" ) no-repeat;
+            border: none;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <nav>
+                <a id="homeBtn" href="html.html"><div><i class="fa-thin fa-house"></i></div></a>
+                <div id="navRight">
+                    <a class="menuBtn" href="#"><div>Topic</div></a>        
+                    <a class="menuBtn" href="#"><div>About</div></a>        
+                    <a class="menuBtn" href="#"><div>2023 Recap</div></a>        
+                    <a class="menuBtn" href="#"><div>CES 2024</div></a> 
+                    <a id="hbgBtn" href="#"><img src="/images/blog/hbg-btn.svg" alt=""></a> 
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="mainContainer">
+                <div id="mainExhibition">
+                    <div id="descBox">
+                        <div class="descText">
+                            <span class="place">Las vegas</span><br>
+                            <span class="aka">CES</span><br>
+                            <span class="name">Consumer Electronic Show</span><br>
+                            <span class="desc">CES is the most influential tech event in the world — the proving ground for breakthrough
+                                technologies and global innovators. This is where the world's biggest brands do business and meet new partners, and
+                                the sharpest innovators hit the stage. </span><br>
+                            <a href="#"> <span class="detail">More Details &nbsp; <img class="arrow" src="/images/blog/detail-arrow-right.svg" alt=""></span><br>
+                            </a>
+
+
+
+                        </div>   
+                        <div class="bar">
+                            <a href="#"> <div class="barBtn"><span>CES2024</span></div></a>
+                            <a href="#"> <div class="barBtn"><span>MWC2024</span></div></a>
+                            <a href="#"> <div class="barBtn"><span>IFA2023</span></div></a>
+                        </div>
+                        
+                                            
+                    </div>
+                    <div class="mainImg"></div>
+
+                </div>
+
+                <div class="contents">
+                    <div class="contentImg">
+                        <img id="img" src="http://veig.tv/wp-content/uploads/2013/08/08.png" alt="">
+                        <div class="buttonBox">
+                            <input type="button" class="button-img" onclick="toggleImg()">
+                        </div>
+                    </div>
+
+                    <div class="contentText">
+                        <p class="mrg-btm place textBold">What kind of tech?</p><br>
+                        <p class="place mrg-btm">Tech West</p><br>
+                        <p class="desc mrg-btm"> CES Tech West is home to the innovative power behind the industry's emerging
+                            technology. Tech West will feature Country Pavilions, the Innovation Awards Showcase, and the latest in sports tech,
+                            lifestyle,design and source, smart home, smart cities, food tech and other high-growth technologies changing the
+                            world. Here you'll find established companies and start-ups. It's also home to the startup community at CES - Eureka
+                            Park™.</p>
+                    </div>
+                </div>
+                </div>
+        </main>
+        <footer>
+            <div class="footerText">
+                <p class="desc">Copyright ⓒ 2023 TAEKHYEON LEE .All Rights Reserverd.</p></div>
+        </footer>
+
+
+    </div>
+    <script>
+
+        function toggleImg() {
+        document.getElementById("img").src = "https://pbs.twimg.com/media/DTMCPChXUAAihTJ.jpg";
+        }
+
+
+    </script>
+</body>
+</html>

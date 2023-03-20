@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        *{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* .box{
+            border:1px solid; border-color: black; 
+            width: 700px;
+        }
+        div{
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        label{
+            display: inline-block;
+            margin-bottom: 10px;
+        } */
+
+        label{
+            width: 80px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: medium;
+        }
+        input{
+            width: 300px;
+        }
+        fieldset{
+            width: 700px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 20px;
+            font-weight:normal;  
+            font-family: 'Noto Sans KR', sans-serif; 
+            font-size:large
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            border-color: #ccc;
+            background-color: rgb(239, 243, 214);
+        }
+        .header{
+            font-weight: bold;  
+            font-family: 'Noto Sans KR', sans-serif; 
+            font-size: x-large;
+            margin: 20px;
+        }
+        label{
+            font-weight: normal;  
+            font-family: 'Noto Sans KR', sans-serif; 
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form action="#">
+        <div class="box">
+            <h1>프론트앤드 개발자 지원서</h1>
+            <br>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
+            <hr width="550px" style="text-align: left; margin-left: 0;">
+            <h3>개인정보</h3>
+            <div>
+                <label for="name">이름</label>
+                <input type="text" id="name" placeholder="공백없이 입력하세요.">
+                <br>
+                <label for="tel">연락처</label>
+                <input type="tel" id="tel">
+            </div>
+            <h3>지원 분야</h3>
+            <div>
+                <input type="radio" id="wen" name="apply" value="web">
+                <label for="apply">웹퍼블리싱</label>
+                <br>
+                <input type="radio" id="front" name="apply" value="front">
+                <label for="apply">웹퍼블리싱</label>
+                <br>
+                <input type="radio" id="mobil" name="apply" value="moile">
+                <label for="apply">모바일 웹</label>
+            </div>
+            <h3>지원동기</h3>
+
+                <label for="desc"></label>
+                <textarea name="desc" id="desc" cols="70" rows="5"></textarea>
+                <br>
+                <button type="submit">접수하기 </button>
+                <button type="reset">다시쓰기</button>
+        </div>
+    </form> -->
+
+    <div class="header">아이패드 주문하기</div> 
+    <form action="#">
+        <fieldset>
+            <legend><b>배송 정보</b></legend>
+            <label for="pdct">주문 상품</label>
+            <input type="text" id="pdct" value="아이패드 12.9인치" readonly>
+            <br>
+            <label for="name">이름</label>
+            <input type="text" id="name" autofocus>
+            <br>
+            <label for="addr">배송 주소</label>
+            <input type="text" id="addr" required>
+            <br>
+            <label for="email">이메일</label>
+            <input type="email" id="email">
+            <br>
+            <label for="tel">연락처</label>
+            <input type="tel" id="tel" placeholder="하이픈 빼고 입력해주세요.(01012345678)">
+            <br>
+            <label for="date">배송 지정</label>
+            <input type="date"> <span style="font-size: small;">(주문일로부터 최소 3일 이후)</span>
+        </fieldset>
+        <div style="margin-left: 100px; margin-top: 20px; font-weight:normal;  
+        font-family: 'Noto Sans KR', sans-serif; 
+        font-size:medium"; display="flex">
+            <button type="submit">주문하기 </button>
+            <button type="reset">취소하기</button>
+        </div>
+    </form>   
+</body>
+</html>

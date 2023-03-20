@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: inline-block;
+            border:1px solid black;
+            margin: 20px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .green-box{
+            background-color: green;
+        }
+        .box:hover{
+            transform: rotate(-30deg);
+            transform-origin: top right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    <!-- 좌표 이동 하기 -->
+    <div class="box green-box">
+    </div>
+
+
+</body>
+
+</html>

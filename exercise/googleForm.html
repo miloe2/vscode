@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
+        integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug=="
+        crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap');
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 304px;
+            height: 390px;
+            border: 1px solid rgb(177, 172, 172);
+            color: #504444;
+            padding: 28px 38px;
+            
+            font-size: 14px;
+            font-weight: bold;
+            margin: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .loginBox {
+            width: 228px;
+            height: 44px;
+            border: 0.5px solid #c7c7c7;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: aqua;
+        }
+
+        #google {
+            width: 25px;
+            height: 25px;
+        }
+
+        .caption {
+            color: #504444;
+            font-size: 14px;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        input {
+            display: block;
+            width: 228px;
+            height: 44px;
+            margin: 18px auto;
+            background-color: #eaeaea;
+            border: none;
+        }
+
+        .idpwbox {
+            display: block;
+            margin: auto;
+        }
+
+        button {
+            background-color: #373f3c;
+            width: 228px;
+            height: 44px;
+            font-size: 14px;
+            color: #ffffff;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="#">
+        <div class="container">
+            <div class="loginBox"> <img id="google" src="/images/google_icon.png">Log in with Google</div>
+            <div class="caption">
+                <p style="font-size: 16px; font-weight: bold;">or</p>
+            </div>
+            <div class="idpwbox">
+                <div class="id">
+                    <label for="id"></label>
+                    <input type="text" id="id" placeholder="&nbsp;  Username">
+                </div>
+                <div class="pw">
+                    <label for="pw"></label>
+                    <input type="password" id="pw" placeholder="&nbsp;  Password">
+                </div>
+            </div>
+            <div class="button"></div>
+            <button>login</button>
+            <div class="caption">Forgot your password?</div>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

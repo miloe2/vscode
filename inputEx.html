@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> -->
+    <style>
+        div{
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        label{
+            width: 60px;
+            display: inline-block;
+            background-color: aqua;
+            /* float: left; */
+        }
+
+    </style>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>예약 정보</h1>
+    <form action="">
+        <div>
+            <label for="name">이름</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+        
+            <label for="phone">휴대폰</label>
+            <input type="text" id="phone">
+        </div>
+        <div>
+            <label for="email">이메일</label>
+            <input type="text" id="email">
+        </div>
+        <div>
+            <button type="submit"> 예약하기 </button>
+        </div>
+    </form>
+    <!-- select 태그를 사용하여 콤보박스 만들기 -->
+    <!-- option : 서버에 전송할 값을 value 속성으로 지정할수 있으며 생략하면 option 태그의 값이 전달됨 -->
+    <!-- option group :  -->
+    <!-- selected : 기본 선택 항목을 변경 -->
+    <!-- size : 화면에 노출되는 항목의 개수 지정 -->
+    <!-- multiple : select -->
+    <form action="#">
+        <fieldset>
+            <legend>개인 정보 입력</legend>    
+            <label for="city">지역</label>
+            <select name="city" id="city" >
+                <optgroup label="서울시">
+                    <option value="강북구">강북구</option>
+                    <option value="강남구" selected>강남구</option>
+                    <option value="서초구">서초구</option>
+                    <option value="영등포구">영등포구</option>
+                    <option value="강서구">강서구</option>
+                </optgroup>
+                <optgroup label="경기도 수원시">
+                    <option value="권선구">권선구</option>
+                    <option value="영통구">영통구</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="등록">
+        </fieldset>
+
+
+    </form>
+
+</body>
+</html>

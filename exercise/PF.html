@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Box Model</title>
+</head>
+<style>
+    body {
+        position: relative;
+        height: 10200;
+    }
+
+    #page1 {
+        width: 100%;
+        height: 980px;
+        background-color: #000;
+    }
+
+    #page2 {
+        width: 100%;
+        height: 980px;
+        background-color: #fff;
+    }
+
+    #page3 {
+        width: 100%;
+        height: 980px;
+        background-color: #000;
+    }
+
+    #main {
+        padding: 400px 200px;
+        color: white;
+        font-weight: 800;
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    #introduce {
+        padding: 30px 30px;
+        color: #000;
+        font-weight: 800;
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .index {
+        position: sticky;
+        left: 16px;
+        top: 8px;
+        background-color: aqua;
+        font-weight: 200;
+        font-size: 16px;
+    }
+
+    #nav {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: sticky;
+        float: right;
+        top: 8px;
+        right: 100px;
+        z-index: 1;
+    }
+
+    #home {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: sticky;
+        float: left;
+        top: 8px;
+        right: 100px;
+        z-index: 1;
+    }
+
+    #moveCaption {
+        display: flex;
+        background-color: aqua;
+        width: 600px;
+    }
+
+    #moveCaption:hover {
+        transform: translateX(300px);
+        transition: all, 1s, ease, 1s;
+        transform-origin: top;
+    }
+</style>
+
+<body>
+    <div id="nav">
+    </div>
+    <div id="home">
+    </div>
+    <div id="page1">
+        <div id="main">
+            <p style="font-weight: 300; font-size: 36px;">What is Lorem Ipsum?</p>
+            <p>Lorem Ipsum </p>
+            <p> <span style="margin-left: 130px;">"</span></p>
+            <p style="font-weight: lighter; font-size: 24px; margin-bottom: 10px;"> it to make a type specimen book.</p>
+            <p></p> <span style="margin-left: 130px;">"</span></p>
+        </div>
+    </div>
+
+    <div id="page2">
+        <div id="introduce">
+            <p class="index">Lorem</p>
+        </div>
+        <p id="moveCaption">풍부하게 위하여, 우리의 구하지 아니더면, 약동하다.</p>
+    </div>
+
+    <div id="page3">
+        <div id="introduce">
+            <p class="index">INTROdddDUCE</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            var navHeight = $(".page2").height();
+            //page2 의 높이를 구하기
+
+            $(".moveCaption").hide();
+            //스크롤시 나타날 객체 미리 숨기기
+
+            $(window).scroll(function () {  // 윈도우 스크롤 기능 작동
+                var rollIt = $(this).scrollTop() >= navHeight;
+                // 스크롤의 정도가 navHeight 의 값을 넘었을 때 == 윈도우 스크롤의 값이 navHeight 의 높이와 같거나 크다
+
+                /*
+                scrollTop 은 윈도우에서 스크롤의 위치가 가장 상위에 있다는 의미로 해석
+                스크롤의 위치가 화면 아래일수록 == scrollTop 의 값이 커짐
+                */
+
+                if (rollIt) {
+                    //윈도우 스크롤 기능의 값이 navHeight 의 높이와 같거나 크면
+                    $(".moveCaption").show().css({ "position": "fixed" });
+                }
+                else {
+                    $(".moveCaption").hide();
+                }
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
