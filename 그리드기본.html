@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .grid-container{
+            margin: 10px;
+            width: 100vw;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3,100px);
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+            row-gap: 2px;
+            column-gap: 2px;
+        }
+        .grid-item{
+            color: white;
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        #header{
+            grid-area: header;
+            background-color: royalblue;
+        }
+        #sidebar{
+            grid-area: sidebar;
+            background-color: orange;
+        }
+        #content{
+            grid-area: content;
+        }
+        #footer{
+            grid-area: footer;
+            background-color: cadetblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header" class="grid-item">grid box 1</div>
+        <div id="sidebar"  class="grid-item">grid box 2</div>
+        <div id="content" class="grid-item">grid box 3</div>
+        <div id="footer" class="grid-item">grid box 4</div>
+
+
+    </div>
+
+    
+</body>
+</html>
